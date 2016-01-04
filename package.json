@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   
-  "dependecies":{
+  "dependencies":{
+      "react":"0.14.5"
+      
       
   },
   "devDependencies": {

@@ -1,0 +1,42 @@
+<style>
+    .container [class^='col-sm'] {
+        padding-bottom: 5px;
+    }
+    
+    .ng-valid[required] {
+        border-left: 5px solid #42A948;
+        /* green */
+    }
+    
+    .ng-invalid {
+        border-left: 5px solid #a94442;
+        /* red */
+    }
+</style>
+
+<div class="container">
+    
+    <div class="row">
+        <ul>
+            <li *ngFor="#hero of heroes">
+                <h2>{{hero.name}}</h2>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label>Id: </label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input [(ngModel)]="hero.id" placeholder="name" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label>Name:</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input [(ngModel)]="hero.name" placeholder="name" class="form-control" required>
+                    </div>
+                </div>
+            </li>
+            </ul>
+    </div>
+</div>

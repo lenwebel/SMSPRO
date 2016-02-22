@@ -1,0 +1,28 @@
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        "--no-color"
+    ],
+    "tasks": [
+        {
+            "taskName": "less_build",
+            "args": [],
+            "isBuildCommand": true,
+            "isWatching": false,
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
+        },
+        {
+        "taskName": "less_watch",
+        "isBuildCommand": false,
+        "isWatching": true,
+        "showOutput": "always",
+        "args": []
+    }
+    ]
+}

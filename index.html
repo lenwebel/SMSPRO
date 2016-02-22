@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thing 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="scripts/es6-shim.min.js"></script>
+    <script src="scripts/system-polyfills.js"></script>
+
+    <script src="scripts/angular2-polyfills.js"></script>
+    <script src="scripts/system.js"></script>
+    <script src="scripts/typescript.js"></script>
+    <script src="scripts/Rx.js"></script>
+    <script src="scripts/angular2.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+        transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {'app': {defaultExtension: 'ts'}} 
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+
+</head>
+<!-- 3. Display the application -->
+<body>
+    <br>
+    <div class="container">
+        <div class="jumbotron">
+            <input-search>Loading...</input-search>
+        </div>
+    </div>
+</body>
+
+</html>

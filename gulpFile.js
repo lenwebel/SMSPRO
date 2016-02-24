@@ -23,5 +23,15 @@ gulp.task("less_build",function(){
 
 gulp.task("less_watch",function(){
 
+    gulp.src(files.less.source).
+    
+    pipe(watch(files.less.source,function(file){
+        gulp.src(file.path)
+        .pipe(less({sourceMap: {
+            sourceMapRootpath: files.less.destination 
+        }
+    }))
+    .pipe(gulp.dest(files.less.destination));    
+    }));
     
 })

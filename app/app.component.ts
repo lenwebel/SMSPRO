@@ -5,6 +5,11 @@ import {Component} from 'angular2/core';
 	templateUrl: 'templates/search.html'
 })
 
-export class AppComponent { }
+export class AppComponent { 
+    
+    public search:string = "Some string";
+           
+    
+}
 
  

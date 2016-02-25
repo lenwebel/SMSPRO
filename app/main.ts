@@ -6,4 +6,3 @@ import {PersonComponent} from  './Person.component'
 bootstrap(AppComponent);
 bootstrap(SearchComponent);
 bootstrap(PersonComponent);
-

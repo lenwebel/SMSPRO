@@ -1,8 +1,5 @@
 node_modules/
 *.js
-<<<<<<< HEAD
 content/css/
-=======
 *.map
 *.css
->>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb

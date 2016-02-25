@@ -3,6 +3,7 @@
 
 
 import {Component} from 'angular2/core';
+import {ISearchItem} from './interfaces/ISearchItem'
 
 @Component({
     selector:"input-search",
@@ -12,7 +13,8 @@ import {Component} from 'angular2/core';
 
 
 export class SearchComponent{
-    public SearchString: string  = "remove this";
+    
+    public SearchString: string;
     public SearchResults: ISearchItem[]; 
     
 }

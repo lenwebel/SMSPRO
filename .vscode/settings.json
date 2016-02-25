@@ -1,4 +1,13 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "http.proxy": "http://wsprd01.rac.com.au/"
+    "http.proxy": "http://wsprd01.rac.com.au/",
+ 
+     "files.exclude": {
+		"node_modules": true,
+		"app/**/*.js": true,
+        "app/**/*.map": true,
+        "content/css":false,
+        "content/css/*.map":true
+	}
+
 }

@@ -1,6 +1,0 @@
-
-interface ISearchItem{
-    Person:string;
-    
-    
-}

@@ -1,3 +1,7 @@
+/// <reference path="\interfaces\ISearchItem.ts" />
+
+
+
 import {Component} from 'angular2/core';
 
 @Component({
@@ -6,15 +10,10 @@ import {Component} from 'angular2/core';
 })
 
 
-interface SearchItem{
-    
-}
 
 export class SearchComponent{
     public SearchString: string  = "remove this";
- 
-    public SearchResults: SearchItem[]; 
- 
- 
+    public SearchResults: ISearchItem[]; 
     
 }
+

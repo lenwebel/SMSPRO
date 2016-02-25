@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Available variables which can be used inside of strings.
 // ${workspaceRoot}: the root folder of the team
 // ${file}: the current opened file
@@ -197,3 +198,33 @@
 	}
 }
 */
+=======
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        "--no-color"
+    ],
+    "tasks": [
+        {
+            "taskName": "less_build",
+            "args": [],
+            "isBuildCommand": true,
+            "isWatching": false,
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
+        },
+        {
+        "taskName": "less_watch",
+        "isBuildCommand": false,
+        "isWatching": true,
+        "showOutput": "always",
+        "args": []
+    }
+    ]
+}
+>>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb

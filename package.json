@@ -2,6 +2,7 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
+<<<<<<< HEAD
     "postinstall": "npm run typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -13,10 +14,21 @@
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-beta.6",
+=======
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+  },
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.3",
+>>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb
     "bootstrap": "^3.3.6",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
     "gulp": "^3.9.1",
+<<<<<<< HEAD
     "gulp-less": "^3.0.5",
     "gulp-less-sourcemap": "^1.4.3",
     "gulp-watch": "^4.3.5",
@@ -26,12 +38,25 @@
     "systemjs": "0.19.20",
     "tsc": "^1.20150623.0",
     "zone.js": "0.5.14"
+=======
+    "gulp-debug": "^2.1.2",
+    "gulp-less": "^3.0.5",
+    "gulp-watch": "^4.3.5",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "0.19.6",
+    "zone.js": "0.5.11"
+>>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb
   },
   "devDependencies": {
     "concurrently": "^1.0.0",
     "lite-server": "^2.0.1",
+<<<<<<< HEAD
     "typescript": "^1.7.5",
     "typings": "^0.6.8",
     "less": "^2.6.0"
+=======
+    "typescript": "^1.7.5"
+>>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb
   }
 }

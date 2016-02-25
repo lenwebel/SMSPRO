@@ -1,0 +1,6 @@
+
+interface ISearchItem{
+    Person:string;
+    
+    
+}

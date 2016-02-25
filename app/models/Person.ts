@@ -11,4 +11,5 @@ export class Person{
         Gender:enums.Gender;
         PersontType:enums.PersonType;
         ContactDetails:Contact;
+        waistsize:number;
     }

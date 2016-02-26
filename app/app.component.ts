@@ -48,4 +48,3 @@ var HEROES: Hero[] = [
   { "id": 19, "name": "Magma" },
   { "id": 20, "name": "Tornado" }
 ];
->>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb

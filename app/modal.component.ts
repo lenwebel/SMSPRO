@@ -3,8 +3,8 @@ import {Component} from 'angular2/core';
 
 
 @Component({
-    selector:'modal',
-    templateUrl: 'templates/modal.html'
+    selector:'create-person-modal',
+    templateUrl: 'templates/create-person-modal.html'
 })
 
 

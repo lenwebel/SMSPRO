@@ -1,13 +1,12 @@
 
 import {Component} from 'angular2/core';
-
+import {InputTextBox} from './inputComponents/textbox.component'
 
 @Component({
     selector:'my-app1',
-    templateUrl: 'templates/create-person.html'
+    templateUrl: 'templates/app.html',
+    directives: [InputTextBox]
 })
-
-
 
 
 export class AppComponent { 

@@ -1,47 +1,33 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-<<<<<<< HEAD
-			"name": "Launch",
-			"type": "node",
-			"request": "launch",
-			"program": "App.js",
-			"stopOnEntry": false,
-			"args": [],
-			"cwd": ".",
-			"runtimeExecutable": null,
-			"runtimeArgs": [
-				"--nolazy"
-			],
-			"env": {
-				"NODE_ENV": "development"
-			},
-			"externalConsole": false,
-			"sourceMaps": false,
-			"outDir": null
-		},
-		{
-			"name": "Attach",
-			"type": "node",
-			"request": "attach",
-			"port": 5858
-		}
-	]
-=======
-			"name": "Launch Extension",
-			"type": "extensionHost",
-			"request": "launch",
-			"runtimeExecutable": "${execPath}",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceRoot}"
-			],
-			"stopOnEntry": false,
-			"sourceMaps": true,
-			"outDir": "out",
-			"preLaunchTask": "npm"
-		}
-	],"tasks": [
+ 	"version": "0.2.0",
+ 	"configurations": [
+ 		{
+ 		"name": "Launch",
+ 			"type": "node",
+ 			"request": "launch",
+ 			"program": "App.js",
+ 			"stopOnEntry": false,
+ 			"args": [],
+ 			"cwd": ".",
+ 			"runtimeExecutable": null,
+ 			"runtimeArgs": [
+ 				"--nolazy"
+ 			],
+ 			"env": {
+ 				"NODE_ENV": "development"
+ 			},
+ 			"externalConsole": false,
+ 			"sourceMaps": false,
+ 			"outDir": null
+ 		},
+ 		{
+ 			"name": "Attach",
+ 			"type": "node",
+ 			"request": "attach",
+ 			"port": 5858
+ 		}
+ 	],
+ "tasks": [
     {
         "taskName": "less_build",
         "isBuildCommand": false,
@@ -58,5 +44,5 @@
         "args": []
     }
     ]
->>>>>>> 1e660ef3fb97f0ec73e131d8f6df1344d23202fb
+
 }

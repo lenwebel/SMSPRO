@@ -14,6 +14,7 @@ export class AppComponent {
     public heroes = HEROES;
     public title = 'Tour of Heros';
     
+    
     public hero :  Hero = {
          id:1,
          name:  'Windstorm'

@@ -14,6 +14,11 @@ export class InputTextBox {
    
    @Input() public id:string;
    
-   @Input() public label:string = 'thing';
+   @Input() public label:string;
+   
+   public constructor(){
+        
+        
+    }
        
 }

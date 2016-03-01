@@ -5,6 +5,16 @@
     </div>
 
     <div class="col-xs-3">
-        <input class="form-control" value="{{value}}" id="{{id}}" />
+        <input type="text" class="form-control" required [(ngModel)]="value" id="{{id}}" (ngControl)="id"  #name="ngForm"/>
+
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          {{label}} is required
+        </div>  
+
     </div>
+    
+    
+    {{ngForm}}
+       
+    
 </div>

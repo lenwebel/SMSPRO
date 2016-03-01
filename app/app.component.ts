@@ -1,6 +1,7 @@
 
 import {Component} from 'angular2/core';
 import {InputTextBox} from './inputComponents/textbox.component'
+import {NgForm} from 'angular2/common'
 
 @Component({
     selector:'my-app1',
@@ -8,13 +9,12 @@ import {InputTextBox} from './inputComponents/textbox.component'
     directives: [InputTextBox]
 })
 
-
 export class AppComponent { 
 
     public heroes = HEROES;
     public title = 'Tour of Heros';
     
-    
+    public model = {name: ""}
     public hero :  Hero = {
          id:1,
          name:  'Windstorm'

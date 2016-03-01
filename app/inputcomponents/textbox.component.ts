@@ -16,6 +16,11 @@ export class InputTextBox {
    
    @Input() public label:string;
    
+   
+   public model = {
+       name=""
+   }
+   
    public constructor(){
         
         

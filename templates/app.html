@@ -1,5 +1,23 @@
 <div>
-      <input-textbox label="some label 2" value="2" id="someid2"></input-textbox>
-      <input-textbox label="some label 1" value="1" id="someid1"></input-textbox>
+<hr>
+<input required type="text"  [(ngModel)]="testcontrol.value"  (ngControl)="testcontrol" class="form-control" #name="ngForm"/>
+
+Dirty: <input [(ngModel)]="testcontrol.dirty" /><br>
+
+Valid: <input [(ngModel)]="testcontrol.valid" /><br>
+
+startswithnumber: {{testcontrol.errors.startsWithNumber}}
+
+<div *ngIf="!testcontrol.valid">
+   <p *ngIf="testcontrol.errors.startsWithNumber">
+      Can't start with a number
+   </p>
+</div>
+
+<hr>
+
+
+<input-textbox label="some label 2" value="2" id="someid2"></input-textbox>
+<input-textbox label="some label 1" value="1" id="someid1"></input-textbox>
 
 </div>

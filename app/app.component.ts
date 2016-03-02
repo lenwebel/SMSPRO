@@ -1,7 +1,8 @@
 
 import {Component} from 'angular2/core';
 import {InputTextBox} from './inputComponents/textbox.component'
-import {NgForm} from 'angular2/common'
+import {NgForm,Control} from 'angular2/common'
+import {CommonValidator} from './validators/common.validator'
 
 @Component({
     selector:'my-app1',
@@ -11,22 +12,9 @@ import {NgForm} from 'angular2/common'
 
 export class AppComponent { 
 
-    public heroes = HEROES;
-    public title = 'Tour of Heros';
     
     public model = {name: ""}
-    public hero :  Hero = {
-         id:1,
-         name:  'Windstorm'
-    };
-    
-    private _hide:boolean;
-    
-    public get Hide():boolean{
-        this._hide = !this._hide;
-        return this._hide;
-    }
-
+    public testcontrol = new Control('1 ',CommonValidator.startsWithNumber)
 }
 
 // interfaces!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

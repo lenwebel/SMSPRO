@@ -1,38 +1,34 @@
-
-import {Component} from 'angular2/core';
-import {InputTextBox} from './inputComponents/textbox.component'
-import {NgForm,Control} from 'angular2/common'
+/* tslint:disable:no-string-literal */  
+import { Component } from 'angular2/core';  
 import {CommonValidator} from './validators/common.validator'
 
-@Component({
-    selector:'my-app1',
-    templateUrl: 'templates/app.html',
-    directives: [InputTextBox]
-})
-
-export class AppComponent { 
-
+import {  
+  FORM_DIRECTIVES,  
+  FormBuilder,  
+  ControlGroup,  
+  Validators,  
+  AbstractControl,
     
-    public model = {name: ""}
-    public testcontrol = new Control('1 ',CommonValidator.startsWithNumber)
+} from 'angular2/common';
+
+@Component({  
+  selector: 'my-app',  
+  directives: [FORM_DIRECTIVES],  
+  templateUrl: 'templates/app.html'
+})  
+export class AppComponent {  
+  myForm: ControlGroup;  
+  sku: AbstractControl;
+
+  constructor(fb: FormBuilder) {  
+    this.myForm = fb.group({  
+      'sku':  ['', CommonValidator.startsWithNumber]  
+    });
+
+    this.sku = this.myForm.controls['sku'];  
+  }
+
+  onSubmit(value: string): void {  
+    console.log('you submitted value: ', value);  
+  }
 }
-
-// interfaces!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-export interface Hero{
-    id:number;
-    name:string;
-}
-
-
-var HEROES: Hero[] = [
-  { "id": 11, "name": "Mr. Nice" },
-  { "id": 12, "name": "Narco" },
-  { "id": 13, "name": "Bombasto" },
-  { "id": 14, "name": "Celeritas" },
-  { "id": 15, "name": "Magneta" },
-  { "id": 16, "name": "RubberMan" },
-  { "id": 17, "name": "Dynama" },
-  { "id": 18, "name": "Dr IQ" },
-  { "id": 19, "name": "Magma" },
-  { "id": 20, "name": "Tornado" }
-];

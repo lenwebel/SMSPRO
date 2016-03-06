@@ -1,14 +1,11 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Thing 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link REL="icon" href="favicon.ico" type="image/ico">
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+  <link REL="icon" href="favicon.ico" type="image/ico">
     <link REL="shortcut icon" href="favicon.ico" type="image/ico">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
-    
     
     
     <link rel="stylesheet" href="content/css/controls.css" />
@@ -19,32 +16,30 @@
     
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
-    <script src="scripts/es6-shim.min.js"></script>
-    <script src="scripts/system-polyfills.js"></script>
-
-    <script src="scripts/angular2-polyfills.js"></script>
-    <script src="scripts/system.js"></script>
-    <script src="scripts/typescript.js"></script>
-    <script src="scripts/Rx.js"></script>
-    <script src="scripts/angular2.dev.js"></script>
-
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <!-- 2. Configure SystemJS -->
     <script>
-        System.config({
-        transpiler: 'typescript', 
-        typescriptOptions: { emitDecoratorMetadata: true }, 
-        packages: {'app': {defaultExtension: 'ts'}} 
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
       });
       System.import('app/main')
             .then(null, console.error.bind(console));
     </script>
-</head>
-  
+  </head>
+  <!-- 3. Display the application -->
   <body>
- <div class="container">
     <input-search>Loading...</input-search>
-    <my-app1>Loading...</my-app1>
-
-  </div>
+    <my-app>Loading...</my-app>
   </body>
 </html>

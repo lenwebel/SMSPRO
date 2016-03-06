@@ -1,6 +1,7 @@
 /* tslint:disable:no-string-literal */  
 import { Component } from 'angular2/core';  
 import {CommonValidator} from './validators/common.validator'
+import {InputTextBox} from './inputcomponents/textbox.component'
 
 import {  
   FORM_DIRECTIVES,  
@@ -13,7 +14,7 @@ import {
 
 @Component({  
   selector: 'my-app',  
-  directives: [FORM_DIRECTIVES],  
+  directives: [FORM_DIRECTIVES,InputTextBox],  
   templateUrl: 'templates/app.html'
 })  
 export class AppComponent {  

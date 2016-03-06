@@ -1,11 +1,14 @@
 <div class="ui raised segment">  
     <h2 class="ui header">Demo Form: with validations (explicit)</h2>  
+    
+    
     <form [ngFormModel]="myForm"  
           (ngSubmit)="onSubmit(myForm.value)"  
           class="ui form">
 
-      <div class="field"  
-          [class.error]="!sku.valid && sku.touched">  
+      <input-textbox label="SOME LABEL" [ctl]="sku">loading input....</input-textbox>
+    
+      <div class="field" [class.error]="!sku.valid && sku.touched">  
         <label for="skuInput">SKU</label>  
         <input type="text"  
                id="skuInput"  

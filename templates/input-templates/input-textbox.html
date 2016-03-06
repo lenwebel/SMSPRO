@@ -1,16 +1,36 @@
 <div class="row form-group ">
 
+    
+
+{{Print}}
+
+<hr>
+<div class="field" [class.error]="!ctl.valid && ctl.touched">  
     <div class="col-xs-3">
         <label attr.for="{{id}}">{{label}}:</label>
     </div>
-
     <div class="col-xs-3">
+        <input type="text"  
+               id="skuInput"  
+               placeholder="SKU"  
+               [ngFormControl]="ctl"
+               class="form-control">
+         <div *ngIf="!ctl.valid"  
+           class="ui error message">SKU is invalid</div>  
+         <div *ngIf="ctl.hasError('required')"  
+           class="ui error message">SKU is required</div>  
+      </div>
+</div>
+      
+
+
+    <!--div class="col-xs-3">
         <input type="text" class="form-control" required [(ngModel)]="value" id="{{id}}" (ngControl)="id"  #name="ngForm"/>
 
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
           {{label}} is required
         </div>  
 
-    </div>
+    </div-->
     
 </div>

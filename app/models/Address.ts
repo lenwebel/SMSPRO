@@ -1,5 +1,7 @@
 
 import * as enums from '../enums/enums'
+    
+import { AbstractControl} from 'angular2/common';
 
 export class Address{
         public AddressType:enums.AddressType;

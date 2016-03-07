@@ -1,5 +1,6 @@
 
 
 export interface ValidationResult{
-    [key:string]:boolean;
+    [key:string]:any;
 }
+

@@ -1,8 +1,15 @@
 /// <reference path=".\Person.ts" />
+import {ModelBase} from './ModelBase';
+import {Control} from 'angular2/common';
 
-import * as enums from '../enums/enums'
-
-export class ContactNumber{
-    public NumberType:enums.ContactNumberType;
-    public ContactNumber:string;   
+export class ContactNumber extends ModelBase{
+    public NumberType: Control;
+    public ContactNumber:Control;   
+    
+    constructor(){
+        super();
+        this.NumberType = new Control('')
+        this.ContactNumber = new Control('')
+    }
+    
 }

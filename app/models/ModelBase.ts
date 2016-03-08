@@ -1,14 +1,16 @@
+
+import {Control,Validators,Validator} from 'angular2/common';
+
 export class ModelBase{
     
-    public ToKeyValuePair(model:Object):string[]{
-       let retval : string[]=[];
-       debugger;
-       for(var property in model){
-           if (model.hasOwnProperty(property)) {
-               retval.push(property);
-           }
-        return retval;
-        }
-    }    
-    
+ // todo base model functions
+ 
+ 
+ 
+ public SetValidator(property:Control,validator:any):void {
+     
+debugger;
+ }
+ 
+     
 }

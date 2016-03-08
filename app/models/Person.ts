@@ -6,11 +6,22 @@ import {CommonValidator} from '../validators/common.validator';
 import {ModelBase}  from './ModelBase'
 
 export class Person extends ModelBase{
-        public FirstName:Control = new Control('',Validators.compose([CommonValidator.required,CommonValidator.startsWithNumber]));;
+        public FirstName:Control;
         public MiddleName:Control;
-        public LastName:Control= new Control('',Validators.compose([CommonValidator.required,CommonValidator.startsWithNumber]));;;
-        public DOB:Control = new Control('',Validators.compose([CommonValidator.required]));;;
-        public Gender:enums.Gender ;
-        public PersontType:enums.PersonType;
+        public LastName:Control;
+        public DOB:Control ;
+        public Gender:Control ;
+        public PersontType:Control;
         public ContactDetails:Contact;
-    }
+    
+
+        constructor(){
+            super();
+            this.FirstName = new Control('',Validators.compose([CommonValidator.required,CommonValidator.startsWithNumber]));
+            this.MiddleName = new Control('');
+            this.LastName = new Control('',Validators.compose([CommonValidator.required,CommonValidator.startsWithNumber]));
+            this.DOB = new Control('',Validators.compose([CommonValidator.required,CommonValidator.startsWithNumber]));
+            this.ContactDetails = new Contact;   
+        }
+
+}

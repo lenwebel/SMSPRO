@@ -6,7 +6,8 @@ export class ModelBase{
       property.validator = Validators.compose(validator)
  }
  
- public IsVisible(property:AbstractControl){  }
+
+public IsVisible(property:AbstractControl){  }
  
 
 }

@@ -26,12 +26,12 @@ export class AppComponent {
   constructor(fb: FormBuilder) {  
     
     this.studentModel = new Student();
+    // this.studentModel.ComposeValidators() use this for validation.
     this.myForm = fb.group(this.studentModel)
     // field errors not bubbling to form try change field types form Control to AbstractControl.
     
 }
  public GetFormErrors(){
-     debugger;
          return JSON.stringify(this.myForm.errors);
  }
   onSubmit(value: string): void {  

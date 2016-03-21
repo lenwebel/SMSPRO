@@ -1,10 +1,10 @@
 /// <reference path=".\Person.ts" />
 import {ModelBase} from './ModelBase';
-import {Control} from 'angular2/common';
+import {Control,AbstractControl} from 'angular2/common';
 
 export class ContactNumber extends ModelBase{
-    public NumberType: Control;
-    public ContactNumber:Control;   
+    public NumberType: AbstractControl;
+    public ContactNumber:AbstractControl;   
     
     constructor(){
         super();

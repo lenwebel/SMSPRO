@@ -36,13 +36,14 @@ export class InputTextBox {
     public  GetErrors() {
         
         let arr = [];
+        
         for(let key in this.ctl.errors){
-            arr.push(this.ctl.errors[key]
+            arr.push(this.ctl.errors[key]);
         }
         return arr;
     }   
  
- get Print {
+ public Print() {
      console.log(this.ctl) 
     }
 }

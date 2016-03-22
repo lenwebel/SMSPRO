@@ -23,8 +23,9 @@ System.register(['./Contact', 'angular2/common', './ModelBase'], function(export
             Person = (function (_super) {
                 __extends(Person, _super);
                 function Person() {
+                    debugger;
                     _super.call(this);
-                    this.FirstName = new common_1.Control('');
+                    this.FirstName = new common_1.Control('', common_1.Validators.required);
                     this.MiddleName = new common_1.Control('');
                     this.LastName = new common_1.Control('');
                     this.DOB = new common_1.Control('');

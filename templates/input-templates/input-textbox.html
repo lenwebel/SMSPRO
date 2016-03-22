@@ -6,8 +6,9 @@
     <div class="col-xs-3">
         <input type="text" id="{{id}}" placeholder="{{placeholder}}" [ngFormControl]="ctl" class="form-control">
          <div *ngFor="#error of GetErrors()" [hidden]="ctl.valid || ctl.pristine" class="alert alert-danger">
-          {{ctl.errors.error}}
+          {{ctl.errors}}
         </div>  
       </div>
+      
 </div>
 </div>

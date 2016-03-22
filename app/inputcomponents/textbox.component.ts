@@ -36,7 +36,7 @@ export class InputTextBox {
     public  GetErrors() {
         
         let arr = [];
-        
+        debugger;        
         for(let key in this.ctl.errors){
             arr.push(this.ctl.errors[key]);
         }

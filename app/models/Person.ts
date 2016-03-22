@@ -16,8 +16,10 @@ export class Person extends ModelBase{
     
 
         constructor(){
+            debugger;
+
             super();
-            this.FirstName = new Control('');
+            this.FirstName = new Control('',Validators.required);
             this.MiddleName = new Control('');
             this.LastName = new Control('');
             this.DOB = new Control('');

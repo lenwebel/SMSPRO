@@ -20,6 +20,7 @@ System.register(['./ModelBase', 'angular2/common'], function(exports_1, context_
             ContactNumber = (function (_super) {
                 __extends(ContactNumber, _super);
                 function ContactNumber() {
+                    debugger;
                     _super.call(this);
                     this.NumberType = new common_1.Control('');
                     this.ContactNumber = new common_1.Control('');

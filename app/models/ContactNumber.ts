@@ -7,6 +7,7 @@ export class ContactNumber extends ModelBase{
     public ContactNumber:AbstractControl;   
     
     constructor(){
+        debugger;
         super();
         this.NumberType = new Control('')
         this.ContactNumber = new Control('')

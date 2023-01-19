@@ -8,6 +8,7 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    environment: production
+    environment: dev
     steps:
       - name: deploy
+        run: echo "hello world"

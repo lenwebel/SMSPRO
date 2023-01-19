@@ -11,3 +11,4 @@ jobs:
     environment: production
     steps:
       - name: deploy
+      - run: echo "running deployment"
